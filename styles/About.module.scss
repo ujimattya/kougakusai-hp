@@ -1,0 +1,58 @@
+.container {
+  position: relative;
+  margin: 0 auto;
+  z-index: 960;
+  min-height: 400px;
+  top: 20vh;
+  bottom: 60vh;
+  margin-bottom: 400px;
+  width: 90%;
+  background: #fff;
+  border-radius: 5px;
+  overflow: scroll;
+  padding: 10%;
+  padding-top: 5%;
+  .decoration {
+    width: 40px;
+  }
+  p {
+    padding: 0.5rem;
+  }
+  .title {
+    display: flex;
+    h2 {
+      padding-bottom: 2px;
+      margin-left: 5px;
+      display: block;
+    }
+  }
+  .information_tate {
+    position: absolute;
+    font-size: 55%;
+    font-weight: 700;
+    transform: rotate(90deg);
+    transform-origin: left top;
+    padding: 10px 72px;
+    letter-spacing: 1px;
+    &::before {
+      content: '';
+      position: absolute;
+      border-top: 1px solid;
+      width: 60px;
+      height: auto;
+      top: 16px;
+      left: 7px;
+      bottom: 17px;
+    }
+    &::after {
+      content: '';
+      position: absolute;
+      border-top: 1px solid;
+      width: 120px;
+      height: auto;
+      top: 16px;
+      left: 150px;
+      bottom: 17px;
+    }
+  }
+}

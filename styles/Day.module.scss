@@ -1,0 +1,15 @@
+.container {
+  overflow: auto;
+  position: fixed;
+  z-index: 999;
+  top: -80px;
+  right: -80px;
+  height: 200px;
+  width: 200px;
+
+  .plan {
+    height: 100%;
+    width: 100%;
+    float: right;
+  }
+}

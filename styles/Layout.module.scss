@@ -1,0 +1,49 @@
+.container {
+  overflow: hidden;
+  position: fixed;
+  width: 100%;
+  height: 100vh;
+  z-index: 1;
+  background-color: #18283f;
+  .wrap {
+    position: absolute;
+    z-index: 950;
+    top: 50px;
+    left: 0;
+    width: 350px;
+    .title {
+      width: 350px;
+    }
+  }
+  .backWrapA {
+    position: absolute;
+    z-index: 955;
+    top: -80px;
+    left: -200px;
+    width: 450px;
+    .backgroundA {
+      width: 100%;
+    }
+  }
+  .backWrapB {
+    position: absolute;
+    z-index: 900;
+    top: 260px;
+    left: -200px;
+    width: 350px;
+    .backgroundB {
+      width: 100%;
+    }
+  }
+  .backWrapC {
+    position: absolute;
+    z-index: 700;
+    overflow: hidden;
+    top: 350px;
+    right: -100px;
+    width: 300px;
+    .backgroundC {
+      width: 100%;
+    }
+  }
+}
