@@ -5,6 +5,10 @@
   height: 100vh;
   z-index: 1;
   background-color: #18283f;
+  @media screen and (min-width: 960px) {
+    width: 75%;
+    margin-left: 25%;
+  }
   .wrap {
     position: absolute;
     z-index: 950;
@@ -12,7 +16,11 @@
     left: 0;
     width: 350px;
     .title {
-      width: 350px;
+      width: 100%;
+    }
+    @media screen and (min-width: 960px) {
+      left: 25%;
+      width: 450px;
     }
   }
   .backWrapA {

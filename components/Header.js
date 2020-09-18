@@ -27,12 +27,12 @@ const Header = () => (
           </Link>
         </li>
         <li>
-          <Link href="">
+          <Link href="/company">
             <a className={styles.menuList__link}>協賛企業一覧</a>
           </Link>
         </li>
         <li>
-          <Link href="">
+          <Link href="/contact">
             <a className={styles.menuList__link}>お問い合わせ</a>
           </Link>
         </li>

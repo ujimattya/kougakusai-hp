@@ -12,11 +12,20 @@
   overflow: scroll;
   padding: 10%;
   padding-top: 5%;
+  @media screen and (min-width: 960px) {
+    width: 60%;
+    margin-left: 35%;
+    padding: 3%;
+  }
   .decoration {
     width: 40px;
   }
   p {
     padding: 0.5rem;
+    @media screen and (min-width: 960px) {
+      font-size: 21px;
+      padding-top: 20px;
+    }
   }
   .title {
     display: flex;
@@ -24,6 +33,9 @@
       padding-bottom: 2px;
       margin-left: 5px;
       display: block;
+      @media screen and (min-width: 960px) {
+        font-size: 32px;
+      }
     }
   }
   .information_tate {
@@ -34,6 +46,9 @@
     transform-origin: left top;
     padding: 10px 72px;
     letter-spacing: 1px;
+    @media screen and (min-width: 960px) {
+      font-weight: 900;
+    }
     &::before {
       content: '';
       position: absolute;
