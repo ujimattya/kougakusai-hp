@@ -9,9 +9,7 @@ class MyDocument extends Document {
   render() {
     return (
       <Html lang="ja">
-        <Head>
-          <meta name="viewport" content="initial-scale=1, viewport-fit=cover" />
-        </Head>
+        <Head></Head>
         <body>
           <div>
             <Main />

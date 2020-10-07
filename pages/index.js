@@ -6,16 +6,18 @@ const Home = () => (
   <React.Fragment>
     <Layout></Layout>
     <div className={styles.container}>
-      <div className={styles.information_tate}>Information</div>
-      <div className={styles.title}>
-        <img src="./decoration.svg" className={styles.decoration} />
-        <h2>お知らせ</h2>
+      <div className={styles.wrap}>
+        <img src="./title.png" className={styles.title} />
       </div>
-      <p>
-        0月7日　機能を追加しました
-        <br />
-        9月30日　〜を更新しました
-      </p>
+      <div className={styles.backWrapA}>
+        <img src="./background.svg" className={styles.backgroundA} />
+      </div>
+      <div className={styles.backWrapB}>
+        <img src="./background.svg" className={styles.backgroundB} />
+      </div>
+      <div className={styles.backWrapC}>
+        <img src="./background.svg" className={styles.backgroundC} />
+      </div>
     </div>
   </React.Fragment>
 );

@@ -1,46 +1,100 @@
-.container {
-  position: relative;
-  margin: 0 auto;
-  z-index: 960;
-  min-height: 400px;
-  top: 20vh;
-  bottom: 60vh;
-  margin-bottom: 400px;
-  width: 90%;
-  background: #fff;
-  border-radius: 5px;
-  overflow: scroll;
-  padding: 10%;
-  padding-top: 5%;
+.title {
+  background-color: #18283f;
+  display: flex;
+  color: #fff;
+  position: fixed;
+  top: 0;
+  right: 0;
+  width: 100%;
+  z-index: 99;
+  height: 75px;
+  background-image: url(../public/Rect.svg);
   @media screen and (min-width: 960px) {
-    width: 60%;
-    margin-left: 35%;
-    padding: 3%;
+    width: calc(100% - 20vw);
+    margin-left: auto;
+    height: 110px;
+    padding-left: 5%;
+  }
+  h2 {
+    padding-bottom: 2px;
+    margin-left: 5px;
+    font-size: 1.8rem;
+    display: block;
+    line-height: 75px;
+    font-weight: 900;
+    @media screen and (min-width: 960px) {
+      line-height: 110px;
+      font-size: 2.5rem;
+      font-weight: 800;
+    }
   }
   .decoration {
     width: 40px;
   }
+}
+.side {
+  display: none;
+
+  @media screen and (min-width: 960px) {
+    display: block;
+    height: 100vh;
+    width: 116px;
+    position: fixed;
+    right: 0;
+    background-color: #18283f;
+    color: #fff;
+    z-index: 99;
+    &::before {
+      content: '';
+      position: fixed;
+      height: 110px;
+      width: 1080px;
+
+      background: url(../public/Rect.svg);
+      transform: rotate(90deg);
+      transform-origin: left bottom;
+      z-index: 999;
+    }
+
+    .side__title {
+      position: absolute;
+      top: 40%;
+      font-size: 3.5rem;
+      transform: rotate(90deg);
+      transform-origin: top;
+      color: #fff;
+      z-index: 10000;
+      font-weight: 600;
+    }
+  }
+}
+.container {
+  background-color: #fff;
+  height: 100vh;
+  margin-top: 75px;
+  padding: 10%;
+
+  @media screen and (min-width: 960px) {
+    width: 100%;
+    padding: 3% 7%;
+    padding-right: 20%;
+    width: calc(100% - 20vw);
+    margin-left: auto;
+    margin-top: 110px;
+  }
+
   p {
     padding: 0.5rem;
+    font-size: 2rem;
+
     @media screen and (min-width: 960px) {
-      font-size: 21px;
       padding-top: 20px;
     }
   }
-  .title {
-    display: flex;
-    h2 {
-      padding-bottom: 2px;
-      margin-left: 5px;
-      display: block;
-      @media screen and (min-width: 960px) {
-        font-size: 32px;
-      }
-    }
-  }
-  .information_tate {
+
+  .information__tate {
     position: absolute;
-    font-size: 55%;
+    font-size: 1.2rem;
     font-weight: 700;
     transform: rotate(90deg);
     transform-origin: left top;
@@ -55,8 +109,8 @@
       border-top: 1px solid;
       width: 60px;
       height: auto;
-      top: 16px;
-      left: 7px;
+      top: 19px;
+      left: 0px;
       bottom: 17px;
     }
     &::after {
@@ -65,8 +119,8 @@
       border-top: 1px solid;
       width: 120px;
       height: auto;
-      top: 16px;
-      left: 150px;
+      top: 19px;
+      left: 130px;
       bottom: 17px;
     }
   }

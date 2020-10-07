@@ -13,14 +13,22 @@
     position: absolute;
     z-index: 950;
     top: 50px;
-    left: 0;
+    left: calc(50% - 190px);
     width: 350px;
     .title {
       width: 100%;
+      @media screen and (min-width: 481px) {
+        width: 500px;
+      }
+      @media screen and (min-width: 960px) {
+        width: 600px;
+      }
+    }
+    @media screen and (min-width: 481px) {
+      left: calc(50% - 270px);
     }
     @media screen and (min-width: 960px) {
-      left: 25%;
-      width: 450px;
+      left: calc(50% - 320px);
     }
   }
   .backWrapA {
@@ -29,6 +37,14 @@
     top: -80px;
     left: -200px;
     width: 450px;
+    @media screen and (min-width: 481px) {
+      width: 650px;
+    }
+    @media screen and (min-width: 960px) {
+      top: -100px;
+      left: -350px;
+      width: 750px;
+    }
     .backgroundA {
       width: 100%;
     }
@@ -39,6 +55,14 @@
     top: 260px;
     left: -200px;
     width: 350px;
+    @media screen and (min-width: 481px) {
+      width: 850px;
+    }
+    @media screen and (min-width: 960px) {
+      top: 500px;
+      left: -400px;
+      width: 800px;
+    }
     .backgroundB {
       width: 100%;
     }
