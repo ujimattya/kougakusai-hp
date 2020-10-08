@@ -10,7 +10,7 @@ const Header = () => (
         <img src="menuicon.svg" />
         <label className={styles.menu__button} htmlFor="menu">
           <div className={styles.menu__inner}></div>
-          <img src="menu.png" className={styles.menu__text} />
+          <img src="menu.svg" className={styles.menu__text} />
         </label>
       </div>
     </div>

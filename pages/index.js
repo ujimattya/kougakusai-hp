@@ -1,12 +1,19 @@
 import React from 'react';
 import Layout from '../components/Layout';
 import styles from '../styles/index.module.scss';
+import Link from 'next/link';
+import Footer from '../components/Footer';
 
 const Home = () => (
   <React.Fragment>
     <Layout></Layout>
     <div className={styles.container}>
       <div className={styles.wrap}>
+        <h1>
+          <img src="./title.png" className={styles.title} alt="こうがく祭" />
+        </h1>
+      </div>
+      {/* <div className={styles.wrap}>
         <img src="./title.png" className={styles.title} />
       </div>
       <div className={styles.backWrapA}>
@@ -17,6 +24,27 @@ const Home = () => (
       </div>
       <div className={styles.backWrapC}>
         <img src="./background.svg" className={styles.backgroundC} />
+      </div> */}
+      <div className={styles.contents__wrapper}>
+        <div className={styles.contents}>
+          <div className={styles.about}>
+            <h2>こうがく祭とは</h2>
+            <p>こうがく祭は毎年11月に開催される茨城大学工学部の学園祭です。</p>
+            <p>工学部ならではの企画や研究室公開などがあり、学生が主体となって運営を行っています。</p>
+            <p>
+              今年度はオンラインでの開催となりました。詳しくは
+              <Link href="/about">
+                <a>オンライン開催について</a>
+              </Link>
+              をご覧ください
+            </p>
+          </div>
+          <div className={styles.new}>
+            <h2>お知らせ</h2>
+            <p>10月12日　HPを公開しました。</p>
+          </div>
+        </div>
+        <Footer />
       </div>
     </div>
   </React.Fragment>

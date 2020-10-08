@@ -1,6 +1,7 @@
 import React from 'react';
 import Layout from '../components/Layout';
 import styles from '../styles/About.module.scss';
+import Footer from '../components/Footer';
 
 const About = () => (
   <React.Fragment>
@@ -22,6 +23,7 @@ const About = () => (
         お楽しみください！
       </p>
     </div>
+    <Footer />
   </React.Fragment>
 );
 
