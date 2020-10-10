@@ -9,9 +9,9 @@ function Footer() {
         <div></div>
         <div className={styles.footer__menuList}>
           <div className={styles.share}>
-            <p className={styles.share__title}>SHARE</p>
+            <p className={styles.share__title}>FLLOW US</p>
             <a href="https://twitter.com/2020kougakusai" target="_blank">
-              <img src="./twitter.svg" />
+              <img src="./twitter.svg" alt="twitter" />
             </a>
           </div>
           <nav className={styles.footer__nav}>
@@ -37,7 +37,7 @@ function Footer() {
                 </Link>
               </li>
               <li className={styles.menuList__link}>
-                <Link href="/contact">
+                <Link href="/policy">
                   <a>サイトポリシー</a>
                 </Link>
               </li>

@@ -7,11 +7,16 @@ const Header = () => (
     <input id="menu" type="checkbox" />
     <div className={styles.container}>
       <div className={styles.menu}>
-        <img src="menuicon.svg" />
-        <label className={styles.menu__button} htmlFor="menu">
+        <img src="menuicon.svg" alt="" />
+        <label className={styles.menu__button} htmlFor="menu" alt="メニュー">
           <div className={styles.menu__inner}></div>
-          <img src="menu.svg" className={styles.menu__text} />
+          <img src="menu.svg" className={styles.menu__text} alt="メニュー" />
         </label>
+      </div>
+      <div className={styles.menu__btn}>
+        <Link href="/">
+          <img src="home.svg" alt="TOPへ" />
+        </Link>
       </div>
     </div>
     <div className={styles.navWrap}>
@@ -44,9 +49,9 @@ const Header = () => (
           </li>
         </ul>
         <div className={styles.share}>
-          <p className={styles.share__title}>SHARE</p>
+          <p className={styles.share__title}>FLLOW US</p>
           <a href="https://twitter.com/2020kougakusai" target="_blank">
-            <img src="./twitter.svg" />
+            <img src="./twitter.svg" alt="twitter" />
           </a>
         </div>
       </nav>
