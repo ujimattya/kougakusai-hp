@@ -9,7 +9,7 @@ function Footer() {
         <div></div>
         <div className={styles.footer__menuList}>
           <div className={styles.share}>
-            <p className={styles.share__title}>FLLOW US</p>
+            <p className={styles.share__title}>FOLLOW US</p>
             <a href="https://twitter.com/2020kougakusai" target="_blank">
               <img src="./twitter.svg" alt="twitter" />
             </a>
