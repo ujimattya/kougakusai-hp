@@ -90,20 +90,74 @@
 
   p {
     padding: 0.5rem;
+    font-size: 1.8rem;
     font-size: 1.5rem;
     margin-bottom: 50px;
     @media screen and (min-width: 960px) {
-      padding-top: 20px;
+      font-size: 1.8rem;
+    }
+  }
+  li {
+    // list-style-type: disc;
+    font-size: 1.5rem;
+    margin-bottom: 20px;
+    @media screen and (min-width: 960px) {
+      font-size: 1.8rem;
     }
   }
   h2 {
     color: #1b8eda;
     margin-bottom: 5px;
-    font-size: 1.8rem;
+    // font-size: 1.8rem;
+    font-size: 2rem;
+
     padding: 0.25em 0.5em; /*上下 左右の余白*/
     color: #494949; /*文字色*/
     background: transparent; /*背景透明に*/
     border-left: solid 5px #7db4e6; /*左線*/
+    @media screen and (min-width: 960px) {
+      font-size: 2rem;
+    }
+  }
+  .btn__square {
+    position: relative;
+    display: inline-block;
+    padding: 0.25em 0.5em;
+    text-decoration: none;
+    background: #18283f; /*背景色*/
+    margin: a auto;
+    color: #fff; /*=背景色*/
+    box-shadow: inset 0 2px 0 rgba(255, 255, 255, 0.2);
+    border-bottom: solid 2px #18283f;
+    border-radius: 4px;
+    font-weight: bold;
+    height: 50px;
+    width: 100%;
+    text-align: center;
+    line-height: 40px;
+    font-size: 20px;
+    text-shadow: -1px -1px rgba(255, 255, 255, 0.44), 1px 1px rgba(0, 0, 0, 0.38);
+    &::before {
+      content: '';
+      position: absolute;
+      top: 0;
+      right: 15px;
+      bottom: 0;
+      margin: auto 0;
+      width: 15px;
+      height: 15px;
+      transform: rotate(45deg);
+      border-top: solid 4px #fff;
+      border-right: solid 4px #fff;
+    }
+    @media screen and (min-width: 960px) {
+      width: 200px;
+    }
+  }
+  &:active {
+    border-bottom: solid 2px #00bcd4;
+    box-shadow: none;
+    text-shadow: -1px -1px rgba(255, 255, 255, 0.3), 1px 1px rgba(0, 0, 0, 0.3);
   }
 
   .information__tate {

@@ -30,14 +30,15 @@
     .title {
       width: 100%;
       @media screen and (min-width: 481px) {
-        width: 50vw;
+        width: 58vw;
       }
       @media screen and (min-width: 960px) {
         width: 40vw;
       }
     }
     @media screen and (min-width: 481px) {
-      left: calc(50% - 30vw);
+      top: 15vw;
+      left: calc(50% - 32vw);
     }
     @media screen and (min-width: 960px) {
       top: 5vh;
@@ -52,7 +53,6 @@
 
     background-color: #fff;
     z-index: 100;
-    font-size: 1.8rem;
     margin-top: 0;
     @media screen and (min-width: 960px) {
     }
@@ -73,11 +73,21 @@
         color: #494949; /*文字色*/
         background: transparent; /*背景透明に*/
         border-left: solid 5px #7db4e6; /*左線*/
+        // font-size: 1.8rem;
+        font-size: 2rem;
+
+        @media screen and (min-width: 960px) {
+          font-size: 2rem;
+        }
       }
       p {
         color: #000;
         padding-bottom: 5px;
-        font-size: 2rem;
+        // font-size: 1.5rem;
+        font-size: 1.8rem;
+        @media screen and (min-width: 960px) {
+          font-size: 1.8rem;
+        }
       }
       a {
         color: #1b8eda;

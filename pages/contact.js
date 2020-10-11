@@ -16,11 +16,9 @@ const Contact = () => (
     <div className={styles.container}>
       <div className={styles.information__tate}>Contact</div>
       <p>
-        今年度のこうがく祭はオンラインでの開催となりました。
+        質問等があればお気軽にお問い合わせください。
         <br />
-        オンライン開催では研究室紹介やサークル企画等を特設サイト上にて配信します。
-        <br />
-        お楽しみください！
+        kougakusai2020@gmail.com
       </p>
     </div>
     <Footer />
