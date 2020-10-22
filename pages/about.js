@@ -24,7 +24,7 @@ const About = () => (
       </p>
       <h2>特設サイト</h2>
       <p>企画等は特設サイト上で配信されます。</p>
-      <a href="/" className={styles.btn__square}>
+      <a href="https://kougakusai-special.vercel.app/" className={styles.btn__square}>
         特設サイトへ
       </a>
     </div>

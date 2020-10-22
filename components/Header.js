@@ -14,9 +14,20 @@ const Header = () => (
         </label>
       </div>
       <div className={styles.menu__btn}>
+        <div className={styles.menu__home}>
+
         <Link href="/">
           <img src="home.svg" alt="TOPへ" />
         </Link>
+        </div>
+        <div className={styles.menu__special}>
+        <Link href="https://kougakusai-special.vercel.app/">
+          <div>
+          <img src="special.svg" alt="特設サイトへ" />
+          <p>特設サイトへ</p>
+          </div>
+        </Link>
+        </div>
       </div>
     </div>
     <div className={styles.navWrap}>
