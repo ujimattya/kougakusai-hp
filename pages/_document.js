@@ -9,7 +9,10 @@ class MyDocument extends Document {
   render() {
     return (
       <Html lang="ja">
-        <Head></Head>
+        <Head>
+        <link rel="icon" href="/samu.svg" />
+
+        </Head>
         <body>
           <div>
             <Main />
