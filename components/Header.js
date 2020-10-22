@@ -60,10 +60,19 @@ const Header = () => (
           </li>
         </ul>
         <div className={styles.share}>
+          <div>
+
           <p className={styles.share__title}>FOLLOW US</p>
           <a href="https://twitter.com/2020kougakusai" target="_blank">
             <img src="./twitter.svg" alt="twitter" />
           </a>
+          </div>
+          <Link href="https://kougakusai-special.vercel.app/">
+          <div className={styles.share__special}>
+            <img src="special.svg" alt="特設サイトへ" />
+            <p>特設サイトへ</p>
+          </div>
+          </Link>
         </div>
       </nav>
     </div>
