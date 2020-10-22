@@ -16,10 +16,12 @@ const Contact = () => (
     <div className={styles.container}>
       <div className={styles.information__tate}>Contact</div>
       <p>
-        質問等があればお気軽にお問い合わせください。
+        質問等があれば下記メールアドレスへお気軽にお問い合わせください。
         <br />
-        kougakusai2020@gmail.com
+
       </p>
+      <h2>メールアドレス</h2>
+      <p>kougakusai2020@gmail.com</p>
     </div>
     <Footer />
   </React.Fragment>
