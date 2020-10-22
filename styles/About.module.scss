@@ -97,10 +97,13 @@
       font-size: 1.8rem;
     }
   }
+  ul {
+    padding-left: 15px;
+  }
   li {
     list-style-type: disc;
-    font-size: 1.5rem;
     margin-bottom: 20px;
+    font-size: 1.5rem;
     @media screen and (min-width: 960px) {
       font-size: 1.8rem;
     }
