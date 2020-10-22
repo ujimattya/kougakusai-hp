@@ -22,8 +22,8 @@
       }
       ~ .navWrap {
         nav {
-          bottom: 94px; //セーフゾーンとフッターの高さ
-          bottom: calc(env(safe-area-inset-bottom) + 44px + 50px);
+          bottom: 104px; //セーフゾーンとフッターの高さ
+          bottom: calc(env(safe-area-inset-bottom) + 44px + 60px);
           @media screen and (min-width: 960px) {
             bottom: 0;
           }
@@ -38,8 +38,8 @@
     background-color: #16212b;
     position: fixed;
     width: 100%;
-    height: 94px;
-    height: calc(env(safe-area-inset-bottom) + 44px + 50px);
+    height: 1044px;
+    height: calc(env(safe-area-inset-bottom) + 44px + 60px);
     bottom: 0;
     &::before {
       content: '';

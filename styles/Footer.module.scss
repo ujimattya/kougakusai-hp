@@ -21,11 +21,11 @@
   }
   width: 100%;
   padding: 10%;
-  padding-bottom: 15%;
+  padding-bottom: 120px;
   color: #fff;
   background-color: #151d21;
-  margin-bottom: 94px;
-  margin-bottom: calc(env(safe-area-inset-bottom) + 44px + 50px);
+  margin-bottom: 80px;
+  margin-bottom: calc(env(safe-area-inset-bottom) + 44px + 60px);
   font-size: 1.8rem;
   @media screen and (min-width: 960px) {
     margin-bottom: 0;
