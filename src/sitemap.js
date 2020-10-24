@@ -1,6 +1,8 @@
 // Change to your custom URL
 const YOUR_URL = "https://kougakusai.jp"
 const getDate = new Date().toISOString();
+const globby = require('globby');
+const fs = require('fs');
 
 
 async function generateSiteMap() {
@@ -8,10 +10,10 @@ async function generateSiteMap() {
   // We add an ! before the files we want to be ignored (in this case, the api pages and the dynamically generated pages
   // change the file path to match the files in your own project
   const pages = await globby([
-        'src/pages/**/*.js',
-        '!src/pages/_*.js',
-        '!src/pages/**/[id].js',
-        '!src/pages/api',
+    'pages/*.js',
+    '!pages/_*.js',
+    '!pages/**/[id].js',
+    '!pages/api',
     ])
 
     const sitemap = `<?xml version="1.0" encoding="UTF-8"?>
@@ -22,7 +24,7 @@ async function generateSiteMap() {
               const route = page.replace(regex, '')
               return `
                       <url>
-                          <loc>${`${YOUR_URL}/${route}`}</loc>
+                          <loc>${`${YOUR_URL}${route}`}</loc>
                       </url>
                   `
             })
