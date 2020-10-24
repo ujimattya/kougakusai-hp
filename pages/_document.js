@@ -13,7 +13,7 @@ class MyDocument extends Document {
         <link rel="icon" href="/samu.svg" />
         <title>2020年こうがく祭公式HP|茨城大学</title>
         <meta content="茨城大学の工学部による学園祭、こうがく祭の2020年度版公式ホームページです。今年は11月7日にオンラインで開催されます。こうがく祭についての情報を発信していきます。" name="description"/>
-        <meta charset="utf-8"/>
+        <meta charSet="utf-8"/>
         <meta property="og:url" content="https://kougakusai.jp/" />
         <meta property="og:type" content="website" />
         <meta property="og:title" content=" 2020年こうがく祭公式HPのトップページ" />
