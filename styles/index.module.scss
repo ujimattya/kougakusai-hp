@@ -100,6 +100,15 @@
       .new {
         min-height: 200px;
         background-color: #fff;
+        div {
+          display: flex;
+        }
+        .new__date {
+          width: 150px;
+        }
+        .new__description {
+          margin-left: 30px;
+        }
       }
     }
   }
