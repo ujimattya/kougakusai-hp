@@ -21,7 +21,7 @@ const Contact = () => (
 
       </p>
       <h2>メールアドレス</h2>
-      <p>kougakusai2020@gmail.com</p>
+      <p>kougakusai.1107@gmail.com</p>
     </div>
     <Footer />
   </React.Fragment>
