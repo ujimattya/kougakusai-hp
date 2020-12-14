@@ -20,14 +20,14 @@ const Header = () => (
           <img src="home.svg" alt="TOPへ" />
         </Link>
         </div>
-        <div className={styles.menu__special}>
+        {/* <div className={styles.menu__special}>
         <Link href="https://kougakusai-special.vercel.app/">
           <div>
           <img src="special.svg" alt="特設サイトへ" />
           <p>特設サイトへ</p>
           </div>
         </Link>
-        </div>
+        </div> */}
       </div>
     </div>
     <div className={styles.navWrap}>
@@ -67,12 +67,12 @@ const Header = () => (
             <img src="./twitter.svg" alt="twitter" />
           </a>
           </div>
-          <Link href="https://kougakusai-special.vercel.app/">
+          {/* <Link href="https://kougakusai-special.vercel.app/">
           <div className={styles.share__special}>
             <img src="special.svg" alt="特設サイトへ" />
             <p>特設サイトへ</p>
           </div>
-          </Link>
+          </Link> */}
         </div>
       </nav>
     </div>

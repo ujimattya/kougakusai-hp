@@ -1,5 +1,5 @@
 .container {
-  background-image: url(../public/background_sm.png);
+  background-image: url(../public/background_sm2.png);
   background-repeat: no-repeat;
   background-size: cover;
   width: 100%;
@@ -10,13 +10,13 @@
   z-index: -1;
   position: relative;
   @media screen and (min-width: 481px) {
-    background-image: url(../public/background_md.png);
+    background-image: url(../public/background_md2.png);
     padding-top: 133%;
     z-index: -1;
     position: relative;
   }
   @media screen and (min-width: 960px) {
-    background-image: url(../public/background_lg.png);
+    background-image: url(../public/background_lg2.png);
     padding-top: 56.25%;
     z-index: -1;
     position: relative;

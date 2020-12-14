@@ -22,11 +22,11 @@ const About = () => (
         <br />
         お楽しみください！
       </p>
-      <h2>特設サイト</h2>
+      {/* <h2>特設サイト</h2>
       <p>企画等は特設サイト上で掲載されます。</p>
       <a href="https://kougakusai-special.vercel.app/" className={styles.btn__square}>
         特設サイトへ
-      </a>
+      </a> */}
     </div>
     <Footer />
   </React.Fragment>

@@ -44,10 +44,22 @@ const Home = () => (
           </div>
           <div className={styles.new}>
             <h2>お知らせ</h2>
+
+
+            <div>
+            <p className={styles.new__date}>12月14日</p>
+            <p className={styles.new__description}>特設サイトの公開を終了しました。</p>
+            </div>
+            <div>
+            <p className={styles.new__date}>11月07日</p>
+            <p className={styles.new__description}>こうがく祭オンライン開催が終了しました。</p>
+
+            </div>
             <div>
 
             <p className={styles.new__date}>10月26日</p>
             <p className={styles.new__description}>HP・特設サイトを公開しました。</p>
+
             </div>
           </div>
         </div>
