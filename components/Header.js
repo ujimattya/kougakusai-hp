@@ -63,7 +63,7 @@ const Header = () => (
           <div>
 
           <p className={styles.share__title}>FOLLOW US</p>
-          <a href="https://twitter.com/2020kougakusai" target="_blank">
+          <a href="https://twitter.com/2021kougakusai" target="_blank">
             <img src="./twitter.svg" alt="twitter" />
           </a>
           </div>
