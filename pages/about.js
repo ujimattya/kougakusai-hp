@@ -1,34 +1,31 @@
 import React from 'react';
 import Layout from '../components/Layout';
-import styles from '../styles/About.module.scss';
+import styles from '../styles/New.module.scss';
+import Link from 'next/link';
 import Footer from '../components/Footer';
+import Image from 'next/image'
 
-const About = () => (
+const Home = () => (
   <React.Fragment>
-    <Layout></Layout>
-    <div className={styles.title}>
-      <img src="./decoration.svg" className={styles.decoration} />
-      <h2>オンライン開催について</h2>
-    </div>
-    <div className={styles.side}>
-      <div className={styles.side__title}>About</div>
-    </div>
     <div className={styles.container}>
-      <div className={styles.information__tate}>About</div>
-      <p>
-        昨年度のこうがく祭はオンラインでの開催となりました。
-        <br />
-        オンライン開催では研究室紹介やサークル企画等を特設サイト上にて掲載しました。今年度の開催方法については未定です。決まり次第お知らせいたします。
-        <br />
-      </p>
-      {/* <h2>特設サイト</h2>
-      <p>企画等は特設サイト上で掲載されます。</p>
-      <a href="https://kougakusai-special.vercel.app/" className={styles.btn__square}>
-        特設サイトへ
-      </a> */}
+      <div className={styles.head}></div>
+        <div className={styles.flex}>
+          <Image
+          src="/sai.png"
+          alt="こうがく祭イメージキャラクター"
+          width={300}
+          height={300}
+          />
+          <div className={styles.description}>
+            <h2 className={styles.pre}>こうがく祭ホームページの場所が変更になりました。</h2>
+            <h2>2021年度以降のこうがく祭ホームページは
+            <a href="https://kougakusai.github.io/kougakusai-hp">
+              こちら
+            </a>になります。</h2>
+          </div>
+        </div>
     </div>
-    <Footer />
   </React.Fragment>
 );
 
-export default About;
+export default Home;

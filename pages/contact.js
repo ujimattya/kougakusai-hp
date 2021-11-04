@@ -1,30 +1,31 @@
 import React from 'react';
 import Layout from '../components/Layout';
-import styles from '../styles/About.module.scss';
+import styles from '../styles/New.module.scss';
+import Link from 'next/link';
 import Footer from '../components/Footer';
+import Image from 'next/image'
 
-const Contact = () => (
+const Home = () => (
   <React.Fragment>
-    <Layout></Layout>
-    <div className={styles.title}>
-      <img src="./decoration.svg" className={styles.decoration} />
-      <h2>お問い合わせ</h2>
-    </div>
-    <div className={styles.side}>
-      <div className={styles.side__title}>Contact</div>
-    </div>
     <div className={styles.container}>
-      <div className={styles.information__tate}>Contact</div>
-      <p>
-        質問等があれば下記メールアドレスへお気軽にお問い合わせください。
-        <br />
-
-      </p>
-      <h2>メールアドレス</h2>
-      <p>kougakusai.1107@gmail.com</p>
+      <div className={styles.head}></div>
+        <div className={styles.flex}>
+          <Image
+          src="/sai.png"
+          alt="こうがく祭イメージキャラクター"
+          width={300}
+          height={300}
+          />
+          <div className={styles.description}>
+            <h2 className={styles.pre}>こうがく祭ホームページの場所が変更になりました。</h2>
+            <h2>2021年度以降のこうがく祭ホームページは
+            <a href="https://kougakusai.github.io/kougakusai-hp">
+              こちら
+            </a>になります。</h2>
+          </div>
+        </div>
     </div>
-    <Footer />
   </React.Fragment>
 );
 
-export default Contact;
+export default Home;

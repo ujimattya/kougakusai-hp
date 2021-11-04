@@ -1,0 +1,29 @@
+.container {
+  background-color: #fff;
+  .head {
+    height: 20px;
+    width: 100%;
+    background-color: #18283f;
+  }
+  .flex {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-flow: column-reverse;
+    @media screen and (min-width: 481px) {
+      flex-direction: row;
+      padding-top: 20px;
+    }
+    .description {
+      padding: 30px;
+      padding-bottom: 0;
+
+      @media screen and (min-width: 481px) {
+        padding-left: 0px;
+      }
+      .pre {
+        font-weight: normal;
+      }
+    }
+  }
+}
